@@ -1,0 +1,51 @@
+/* Setting the box-sizing property to border-box for all elements on a web page */
+*{
+    box-sizing:border-box
+}
+
+/* Applying font-family globally to whole page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling parent container containing update page components */
+.updateContainer{
+    text-align:center;
+}
+
+/* Styling 'Back to Tasks List' button */
+.backTasksBtn{
+  background-color: #FF4500;
+  color: white;
+  padding: 16px 100px 16px;
+  margin: 50px 0 0;
+  border: none;
+  border-radius:10px;
+  cursor: pointer;
+  width: fit-content;
+  opacity: 0.9;
+  font-size: 20px;
+}
+
+/* Styling input for updating task */
+input{
+    padding:20px 10px 20px;
+    font-size:20px;
+    width:500px;
+    border-radius:10px;
+}
+
+/* Styling 'Update Task' button */
+.updateButton{
+  background-color: #034f84;
+  color: white;
+  padding: 16px 20px;
+  margin: 20px 20px 20px 20px;
+  border: none;
+  border-radius:10px;
+  cursor: pointer;
+  width: 200px;
+  opacity: 0.9;
+  font-size: 20px;
+}
+

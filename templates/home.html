@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>To Do List - Home</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+    </head>
+    <body>
+        <!-- Top navigation bar with 'TO DO LIST APPLICATION' 'Sign Up' 'Login' hyperlinks-->
+        <div class="topnav">
+            <a class="active" href="{{ url_for('home') }}">TO DO LIST APPLICATION</a>
+            <div class="topnav-right">
+                <a class="register" href="{{ url_for('register') }}">Sign Up</a>
+                <a class="login" href="{{ url_for('login') }}">Login</a>
+            </div>
+        </div>
+        <!-- Container below Navigation bar containing messages and 'Add Tasks' button-->
+        <div class="bottomContainer">
+            <h1>Welcome to To Do List Application</h1>
+            <h2>Let's add some tasks..!!</h2>
+            <a href="{{ url_for('login') }}"><button type="submit" class="addTasksBtn">Add Tasks</button></a>
+        </div>
+    </body>
+</html>

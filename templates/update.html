@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List - Update Task</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='update.css') }}">
+    </head>
+    <body>
+        <div class="updateContainer">
+            <!-- h1 type of heading -->
+            <h1>Update Task</h1>
+            <!-- Form to update the task -->
+            <form method="POST" action="/update/{{ task._id }}">
+                <input type="text" name="new_task_name" placeholder="Update task" value="{{ task.task_name }}" required>
+                <button class="updateButton" type="submit">Update Task</button>
+            </form>
+            <!-- Button to redirect update page to page containing tasks list -->
+            <a href="{{ url_for('tasks') }}"><button type="submit" class="backTasksBtn">Back to Tasks List</button></a>
+        </div>
+    </body>
+</html>

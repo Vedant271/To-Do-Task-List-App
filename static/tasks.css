@@ -1,0 +1,170 @@
+/* Setting the box-sizing property to border-box for all elements on a web page */
+*{
+    box-sizing:border-box
+}
+
+/* Applying font-family globally to whole page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container below top navigation bar containing messages and task input form */
+.tasksContainer{
+    text-align:center;
+}
+
+/* Styling input field for addition of new task */
+.taskInput{
+    padding:10px 10px 10px;
+    font-size:20px;
+    width:500px;
+    border-radius:10px;
+    margin: 0 0 20px 0;
+}
+
+/* Styling list */
+ul {
+  list-style-type: none; /* Remove bullets */
+}
+
+/* Style for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 2px 14px 2px;
+    background-color:white;
+}
+
+/* Style for the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling list items */
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius:15px;
+    padding: 0 15px 0;
+    margin: 20px 300px 20px;
+}
+
+/* Style for the text/paragraph */
+.text {
+    flex-grow: 1;
+    margin-right: 10px;
+    font-size:23px;
+}
+
+/* Style for the buttons */
+.buttons {
+    flex-shrink: 0;
+}
+
+/* Styling for logout button */
+a.logoutButton {
+  float: left;
+  text-align: center;
+  padding: 12.5px 16px;
+  text-decoration: none;
+  background-color: #FF4500;
+  color: white;
+  margin: 0 0 0 10px;
+  border-radius:10px;
+  font-size: 20px;
+}
+
+/* Styling for delete button */
+a.deleteButton{
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color:#fd5c63;
+  color: white;
+  margin: 0 0 0 10px;
+  border-radius:10px;
+}
+
+/* Styling for update button */
+a.updateButton{
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color:#034f84;
+  color: white;
+  margin: 0 0 0 10px;
+  border-radius:10px;
+
+}
+
+/* Styling for 'Add Task' button */
+.addTaskButton{
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 0 0 0 20px;
+  border: none;
+  border-radius:10px;
+  cursor: pointer;
+  width: 200px;
+  opacity: 0.9;
+  font-size: 20px;
+}
+
+/* Styling for search button */
+.searchButton{
+  background-color: #FF4500;
+  color: white;
+  padding: 12.5px 20px;
+  margin: 0 0 0 20px;
+  border: none;
+  border-radius:10px;
+  cursor: pointer;
+  width: 100px;
+  opacity: 0.9;
+  font-size: 20px;
+}
+
+/* Styling for search text field */
+.searchArea{
+    padding:10px;
+    width:500px;
+    border-radius:10px;
+    font-size:17px;
+}
+
+/* Styling for search text field placeholder */
+.searchArea::placeholder{
+    font-size:17px;
+}
+
+/* Styling top left company name inside navigation bar */
+p.appName{
+    background-color:#FF4500;
+    border-radius:10px;
+    padding:15px;
+    color:white;
+}
+
+/* Styling message container  */
+.message{
+    text-align:center;
+}
+
+/* Styling message */
+.messageText{
+    background-color:#FEBE10;
+    margin:0 570px;
+    padding:10px;
+    border-radius:10px;
+    color:white;
+}

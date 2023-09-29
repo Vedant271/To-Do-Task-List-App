@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List - Task Manager</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='tasks.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Top navigation bar for login page-->
+        <div class="navbar" id="navbar">
+            <p class="appName">TO DO LIST APPLICATION</p>
+            <div class="search-container">
+                <!-- Add a search form -->
+                <form method="GET" action="/search">
+                    <input class="searchArea" type="text" name="query" placeholder="Search task">
+                    <button class="searchButton" type="submit">Search</button>
+                </form>
+                <a class="logoutButton" href="{{ url_for('logout') }}">Logout</a>
+            </div>
+        </div>
+        <!-- Displaying messages related to input validations and success-->
+        <div class="message">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <p class="messageText">{{ messages[-1] }}</p>
+                {% endif %}
+            {% endwith %}
+        </div>
+        <!-- Division below top navigation bar containing messages and form to add task -->
+        <div class="tasksContainer">
+            <h1>Tasks Manager</h1>
+            <h1>Welcome, {{ user.username }} !!</h1>
+            <!-- Form to add a task -->
+            <form method="POST" action="/add">
+                <div >
+                    <input class="taskInput" type="text" name="task" placeholder="Add a new task" required>
+                    <button class="addTaskButton" type="submit">Add Task</button>
+                </div>
+            </form>
+        </div>
+        <!-- List of tasks -->
+        <ul>
+            {% for task in tasks %}
+                <li>
+                    <div class="list-item">
+                        <div class="text">
+                            <p>{{ task.task_name }}</p>
+                        </div>
+                        <div class="buttons">
+                            <a class="updateButton" href="/update/{{ task._id }}">Update</a>
+                            <a class="deleteButton" href="/delete/{{ task._id }}">Delete</a>
+                        </div>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
+
+
+
+

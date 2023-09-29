@@ -1,0 +1,137 @@
+/* Setting the box-sizing property to border-box for all elements on a web page */
+*{
+    box-sizing:border-box
+}
+
+/* Applying font-family globally to whole page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Add padding to containers */
+.container{
+    padding : 0 200px 0;
+}
+
+/* Styling input fields */
+input[type=text],
+input[type=password]{
+    width:100%;
+    padding:15px;
+    margin:5px 0 22px 0;
+    display:inline-block;
+    border:none;
+    background: #f1f1f1;
+    border-radius:10px;
+}
+
+/* Styling input fields when they are in focus */
+input[type=text]:focus,
+input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  border-radius:10px;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/login button */
+.loginbtn {
+  background-color: #FF4500;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius:10px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 20px;
+}
+
+/* Style on hover */
+.loginbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Center the text of the "login" section */
+.login {
+  text-align: center;
+}
+
+/* Styling top navigation bar */
+.topnav {
+    overflow: hidden;
+    padding: 1rem;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #484848;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border: 1px solid #484848;
+  box-sizing: border-box;
+  border-radius:10px;
+}
+
+/* Styling link for register button inside top navigation */
+.topnav a.register{
+    margin: 0 20px 0 0;
+}
+
+/* Style on hover to links */
+.topnav a:hover {
+  background-color: #A9A9A9;
+  color: white;
+  border-radius:10px;
+  border:none;
+}
+
+/* Styling the active link */
+.topnav a.active {
+  background-color: #FF4500;
+  border-radius:10px;
+  color: white;
+  border:none;
+}
+
+/* Styling the active login link */
+.topnav a.activeLogin {
+  background-color: #FF4500;
+  border-radius:10px;
+  color: white;
+  border:none;
+  margin: 0 20px 0 0;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+/* Styling message container  */
+.message{
+    text-align:center;
+}
+
+/* Styling message */
+.messageText{
+    background-color:#FEBE10;
+    margin:0 570px;
+    padding:10px;
+    border-radius:10px;
+    color:white;
+}
